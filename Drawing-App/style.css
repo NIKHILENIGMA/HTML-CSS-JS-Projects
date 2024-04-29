@@ -32,79 +32,202 @@
     background-color: #0A050E;
 }
 
-/** option-panel */
+/** panel */
 
-.option-panel{
+.panel{
     position: relative;
     width: 60px;
-    height: 90%;
-    background-color: #250E33;
-    border-radius: 15px ;
-    color: #F2E9F7;
+    height: 60%;
+    border-radius: 10px ;
     border: solid 1px #C393DE;
-    box-shadow: #C393DE;
-    margin-right: 2vw;
+    box-shadow: 6px 7px 4px rgba(195, 147, 222, 0.15),24px 29px 16px rgba(195, 147, 222, 0.10),55px 65px 35px rgba(195, 147, 222, 0.05);
+    margin-right: 1.2vw;
+    z-index: 2;
 }
 
-.shapes{
-    position: relative;
-
-}
-
-
-.options {
-    width: 6.5vw;
-    height: 95%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: space-around;
-    padding-left: 15px;
-    /* background-color: rgba(226, 80, 17, 0.132); */
-
-}
-.shapes {
-    position: relative;
-    width: 90%;
-
-}
-.dropdown-content{
-    position: absolute;
-    display: flex;
-    top: -5px;
-    left: 50%;
-    padding: 4px 8px;
+.panel button{
+    cursor: pointer;
+    background-color: transparent;
+    overflow: hidden;
+    border: none;
+    width: 100%;
+    height: 8.3vh;
+    padding: 20px 0px;
+    /* background-color: red; */
+    border-radius: 10px;
     
 }
 
-.dropdown-content button{
+.panel button:hover{
+    background-color: #c393de87;
+    
+}
+
+.panel span:hover{
+    color: #e622c6;
+} 
+#shapes-tools-card{
     display: none;
-    background-color: transparent;
-    border: solid .5px #F2E9F7;
-    margin-right: 5px;
-    padding: 2px 5px;
-    cursor: pointer;
 
 }
-.dropdown-content button:hover{
-    background-color: #0A050E;  
-    color: #C393DE;
-    cursor: pointer;
+.card1 {
+    position: fixed;
+    left: 7%;
+    top:21%;
+    background-color: #0A050E;
+    padding: 5px 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3px;
+    box-shadow: 6px 7px 4px rgba(195, 147, 222, 0.15),24px 29px 16px rgba(195, 147, 222, 0.10),55px 65px 35px rgba(195, 147, 222, 0.05);
 
 }
 
+.card1 button .material-symbols-outlined{
+    cursor: pointer;
+    font-variation-settings:
+    'FILL' 0 ,
+    'wght' 600,
+    'GRAD' 1,
+    'opsz' 26;
+    color: #F2E9F7;
+    background-color: #0A050E;
+    padding: 10px 10px;
+}
 
+.card1 button .material-symbols-outlined:hover{
+    background-color: #f2e9f772;
+    color: #e622c6;
+}
+
+#brush-tools-card{
+    display: none;
+}
+
+.card2 {
+    position: fixed;
+    left: 7%;
+    top: 30%;
+    background-color: #0A050E;
+    padding: 5px 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3px;
+    box-shadow: 6px 7px 4px rgba(195, 147, 222, 0.15),24px 29px 16px rgba(195, 147, 222, 0.10),55px 65px 35px rgba(195, 147, 222, 0.05);
+
+}
+
+.card2 button .material-symbols-outlined{
+    cursor: pointer;
+    font-variation-settings:
+    'FILL' 0 ,
+    'wght' 600,
+    'GRAD' 1,
+    'opsz' 26;
+    color: #F2E9F7;
+    background-color: #0A050E;
+    padding: 10px 10px;
+}
+
+.card2 button .material-symbols-outlined:hover{
+    background-color: #f2e9f772;
+    color: #e622c6;
+}
+
+#color-palette-card{
+    display: none;
+} 
+.card3 {
+    position: fixed;
+    left: 7%;
+    top: 40%;
+    background-color: #0A050E;
+    padding: 5px 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3px;
+    box-shadow: 6px 7px 4px rgba(195, 147, 222, 0.15),24px 29px 16px rgba(195, 147, 222, 0.10),55px 65px 35px rgba(195, 147, 222, 0.05);
+
+}
+
+.card3 button .material-symbols-outlined{
+    cursor: pointer;
+    font-variation-settings:
+    'FILL' 0 ,
+    'wght' 600,
+    'GRAD' 1,
+    'opsz' 26;
+    color: #F2E9F7;
+    background-color: #0A050E;
+    padding: 10px 10px;
+}
+
+.card3 button .material-symbols-outlined:hover{
+    background-color: #f2e9f772;
+    color: #e622c6;
+}
+
+
+#notes-tools-card{
+    display: none;
+} 
+.card4 {
+    position: fixed;
+    left: 7%;
+    top: 48%;
+    background-color: #0A050E;
+    padding: 5px 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3px;
+    box-shadow: 6px 7px 4px rgba(195, 147, 222, 0.15),24px 29px 16px rgba(195, 147, 222, 0.10),55px 65px 35px rgba(195, 147, 222, 0.05);
+
+}
+
+.card4 button .material-symbols-outlined{
+    cursor: pointer;
+    font-variation-settings:
+    'FILL' 0 ,
+    'wght' 600,
+    'GRAD' 1,
+    'opsz' 26;
+    color: #F2E9F7;
+    background-color: #0A050E;
+    padding: 10px 10px;
+}
+
+.card4 button .material-symbols-outlined:hover{
+    background-color: #f2e9f772;
+    color: #e622c6;
+}
+
+/* .options.active-option .material-symbols-outlined {
+    /* background-color 
+    color: #e622c6; 
+  } */
 
 .drawing-board{
     width: 90%;
     height: 90%;
     background-color: #fff;
-    border-radius: 20px 20px ;
-    margin-left: 10px;
+    
 }
+
+
+
+.clear-canvas{
+    cursor: pointer;
+    
+}
+
+.drawing-board {
+
+    border-radius: 10px;
+} 
 
 .drawing-board canvas{
     width: 100%;
     height: 100%;
     /* background-color: #C393DE; */
 }
+

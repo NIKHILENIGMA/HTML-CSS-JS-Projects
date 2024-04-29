@@ -12,78 +12,150 @@
   </head>
   <body>
     <div class="container">
-      <section class="option-panel">
-        <!-- Shapes -->
-        <div class="options">
-          <div class="shapes">
-            <span class="dropbtn material-symbols-outlined"> interests </span>
-            <div class="dropdown-content">
-              <!-- Square -->
-              <button class=" shapes-tools">
-                <span class="material-symbols-outlined">
-                  check_box_outline_blank
-                </span>
-              </button>
-              <!-- Triangle -->
-              <button class=" shapes-tools">
-                <span class="material-symbols-outlined"> change_history </span>
-              </button>
-              <button class=" shapes-tools">
-                <span class="material-symbols-outlined"> circle </span>
-              </button>
-              <button class=" shapes-tools">
-                <span class="material-symbols-outlined"> pentagon </span>
-              </button>
-              <button class=" shapes-tools">
-                <span class="material-symbols-outlined"> favorite </span>
-              </button>
-              <button class=" shapes-tools">
-                <span class="material-symbols-outlined"> database </span>
-              </button>
-            </div>
-          </div>
-          <!-- Brushes -->
-          <div class="brush">
-            <span class="material-symbols-outlined"> brush </span>
-          </div>
-          <!-- Notes -->
-          <div class="notes">
-            <span class="material-symbols-outlined"> add_notes </span>
-          </div>
-          <!-- Color Palette -->
-          <div class="color-palette">
-            <span class="material-symbols-outlined"> palette </span>
-            <div class="color-palette">
-              <!-- <div class="color-row1"> -->
-                <!-- <input type="color" id="color-selection"> -->
-                <!-- <li></li> -->
-                <!-- <li></li> -->
-                <!-- <li></li> -->
-              <!-- </div> -->
-              <!-- <div class="color-row2"> -->
-                <!-- <li></li> -->
-                <!-- <li></li> -->
-                <!-- <li></li> -->
-                <!-- <li></li> -->
-              <!-- </div> -->
-            </div>
-          </div>
-          <!-- Text -->
-          <div class="text">
-            <span class="material-symbols-outlined"> title </span>
-          </div>
-          <!-- Remove Camvas -->
-          <div class="clear-canvas">
-            <span class="material-symbols-outlined"> delete_forever </span>
-          </div>
-          <!-- Download canvas -->
-          <div class="clear-canvas">
-            <span class="material-symbols-outlined"> download </span>
-          </div>
-        </div>
+      <!--/ Left option panel  -->
+      <section class="panel">
+        <!--@ Shapes Tools -->
+        <button class="options" data-target="shapes-tools-card">
+          <span class="material-symbols-outlined">interests</span>
+        </button>
+
+        <!--@ Brush Tools -->
+        <button class="options" data-target="brush-tools-card">
+          <span class="material-symbols-outlined">brush</span>
+        </button>
+
+        <!--@ Color palette -->
+        <button class="options" data-target="color-palette-card">
+          <span class="material-symbols-outlined">palette</span>
+        </button>
+
+        <!--@ Notes tools -->
+        <button class="options" data-target="notes-tools-card">
+          <span class="material-symbols-outlined">add_notes</span>
+        </button>
+
+        <!--@ Text tools -->
+        <button class="options" data-target="text-tools-card">
+          <span class="material-symbols-outlined">title</span>
+        </button>
+
+        <!--@ Clear canvas -->
+        <button class="options" id="clear-canvas">
+          <span class="material-symbols-outlined">delete_forever</span>
+        </button>
+
+        <!--@ Download canvas -->
+        <button class="options" id="download-canvas">
+          <span class="material-symbols-outlined">download</span>
+        </button>
       </section>
+
+      <!--/ Shapes Tools Card -->
+      <div class="card1" id="shapes-tools-card">
+        <!-- Content similar for each tool, ensure unique IDs where necessary -->
+        <button class="card-opt">
+          <span class="material-symbols-outlined">check_box_outline_blank</span>
+        </button>
+
+        <button class="card-opt">
+          <span class="material-symbols-outlined"> change_history </span>
+        </button>
+
+        <button class="card-opt">
+          <span class="material-symbols-outlined"> pentagon </span>
+        </button>
+
+        <button class="card-opt">
+          <span class="material-symbols-outlined"> hexagon </span>
+        </button>
+
+        <button class="card-opt">
+          <span class="material-symbols-outlined"> database </span>
+        </button>
+
+        <button class="card-opt">
+          <span class="material-symbols-outlined"> favorite </span>
+        </button>
+      </div>
+
+      <!--/ Brush Tools Card -->
+      <div class="card2" id="brush-tools-card">
+        <button class="card-opt">
+          <span class="material-symbols-outlined"> brush </span>
+        </button>
+
+        <button class="card-opt">
+          <span class="material-symbols-outlined"> stylus_note </span>
+        </button>
+
+        <button class="card-opt">
+          <span class="material-symbols-outlined"> edit </span>
+        </button>
+
+        <button class="card-opt">
+          <span class="material-symbols-outlined"> ink_eraser </span>
+        </button>
+      </div>
+
+      <!--/ Additional Cards (Color Palette, Notes, Text) -->
+      <div class="card3" id="color-palette-card">
+        <button class="card-opt">
+          <input type="color" id="green" value="#ffce30" />
+        </button>
+
+        <button class="card-opt">
+          <input type="color" id="red" value="#ea3546" />
+        </button>
+
+        <button class="card-opt">
+          <input type="color" id="pink" value="#e589b8" />
+        </button>
+
+        <button class="card-opt">
+          <input type="color" id="violet" value="#7369ae" />
+        </button>
+
+        <button class="card-opt">
+          <input type="color" id="teal" value="#238ba8" />
+        </button>
+
+        <button class="card-opt">
+          <input type="color" id="yellow" value="#f3ec6b" />
+        </button>
+      </div>
+
+      <!--/ Ensure each card has a unique ID matching the data-target of its corresponding button -->
+      <div class="card4" id="notes-tools-card">
+        <button class="card-opt">
+          <input type="color" id="green" value="#ffce30" />
+        </button>
+
+        <button class="card-opt">
+          <input type="color" id="red" value="#ea3546" />
+        </button>
+
+        <button class="card-opt">
+          <input type="color" id="pink" value="#e589b8" />
+        </button>
+
+        <button class="card-opt">
+          <input type="color" id="violet" value="#7369ae" />
+        </button>
+
+        <button class="card-opt">
+          <input type="color" id="teal" value="#238ba8" />
+        </button>
+
+        <button class="card-opt">
+          <input type="color" id="yellow" value="#f3ec6b" />
+        </button>
+      </div>
+
+      <!--/ Drawing Board -->
       <section class="drawing-board">
-        <canvas></canvas>
+        <canvas id="drawing-canvas">
+          
+        </canvas>
       </section>
     </div>
 

@@ -330,7 +330,7 @@
   height: 50%;
   color: #e7e3e3;
   background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(20px);
   box-shadow: 20px 20px 22px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   display: flex;
@@ -379,6 +379,7 @@
   align-items: center;
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
   box-shadow: 10px 12px 22px rgba(0, 0, 0, 0.4);
   border-radius: 20px;
 }

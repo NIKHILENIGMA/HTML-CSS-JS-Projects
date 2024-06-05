@@ -1,15 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Photo Gallery</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <script type="module" src="app.js"></script>
+    <link
+      rel="shortcut icon"
+      href="public/icon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="search">
+      <div class="slider" id="slider"></div>
+      <div class="content">
+        <h1>A Glimpse of Timeless Beauty</h1>
+        <p>
+          Step into a world of captivating moments, captured in stunning detail.
+        </p>
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" name="search" id="" placeholder="Search image" />
+        </div>
+      </div>
+    </section>
 
-</body>
+    <section class="gallery">
+      <ul class="images">
+        <li class="card">
+          <img
+            src="https://images.unsplash.com/photo-1611601322175-ef8ec8c85f01?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bW9kZWxzfGVufDB8fDB8fHww"
+            alt="image-1"
+          />
+        </li>
+        <li class="card">
+          <img
+            src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bW9kZWxzfGVufDB8fDB8fHww"
+            alt="image-2"
+          />
+        </li>
+        <li class="card">
+          <img
+            src="https://images.unsplash.com/photo-1556347961-f9521a88cb8a?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW9kZWxzfGVufDB8fDB8fHww"
+            alt="image-3"
+          />
+        </li>
+        <li class="card">
+          <img
+            src="https://images.unsplash.com/photo-1617922001439-4a2e6562f328?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG1vZGVsc3xlbnwwfHwwfHx8MA%3D%3D"
+            alt="image-4"
+          />
+        </li>
+        <li class="card">
+          <img
+            src="https://images.unsplash.com/photo-1549298916-b41d501d3772?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2hvZXN8ZW58MHx8MHx8fDA%3D"
+            alt="image-5"
+          />
+        </li>
+        <li class="card">
+          <img
+            src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2hvZXN8ZW58MHx8MHx8fDA%3D"
+            alt="image-6"
+          />
+        </li>
+        <li class="card">
+          <img
+            src="https://images.unsplash.com/photo-1575224300306-1b8da36134ec?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FuZHl8ZW58MHx8MHx8fDA%3D"
+            alt="image-7"
+          />
+        </li>
+        <li class="card">
+          <img
+            src="https://images.unsplash.com/photo-1609709295948-17d77cb2a69b?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2xvdGhzfGVufDB8fDB8fHww"
+            alt="image-8"
+          />
+        </li>
+        <li class="card">
+          <img
+            src="https://images.unsplash.com/photo-1587614203976-365c74645e83?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D"
+            alt="image-9"
+          />
+        </li>
+        <li class="card">
+          <img
+            src="https://images.unsplash.com/photo-1613387945987-2d5f05a1ab8b?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNsb3Roc3xlbnwwfHwwfHx8MA%3D%3D"
+            alt="image-10"
+          />
+        </li>
+      </ul>
+    </section>
+
+    <script type="module" src="images.js"></script>
+    <script type="module" src="slider.js"></script>
+    <script type="module" src="app.js"></script>
+  </body>
 </html>
